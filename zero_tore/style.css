@@ -1,0 +1,224 @@
+/*
+Theme Name: zero_tore
+Theme URI: https://tensais.net
+Description: A theme by <a href="http://www">title</a>.
+Version: 1
+Author: tensais.
+Author URI: https://tensais.net
+*/
+html,
+body,
+header,
+.view {
+  height: 100%;
+
+}
+
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .view {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 850px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 650px;
+  }
+}
+@media (min-width: 800px) and (max-width: 850px) {
+          .navbar:not(.top-nav-collapse) {
+              background: #1C2331!important;
+          }
+      }
+/* .header_title,
+.second_title{
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+
+p {
+	font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+} */
+
+.recent_box{
+  background-color: rgba(0,0,0,.1);
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.recent_news{
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+
+.navbar{
+  background-color: rgba(0,0,0,.5);
+}
+
+.navbar-nav li{
+  margin-right: 20px;
+}
+
+.social li{
+  margin-right: 20px;
+}
+
+
+.info_title{
+  margin-bottom: 30px;
+}
+
+footer{
+     background-color: #eee;
+     padding:20px 0px;
+}
+
+footer .fa:hover{
+   color:#675f5f;
+}
+
+.footer-copyright{
+  background-color: #eee;
+}
+
+.logo{
+    color:#ddd;
+    font-weight:800;
+    font-size:30px;
+}
+
+.adress span , .contact span , .social span , .header-form{
+   color:#675f5f;
+   font-weight: 800;
+   padding-top:20px;
+   padding-bottom:20px;
+   display: block;
+   text-transform: uppercase;
+   font-size: 13px;
+   letter-spacing: 3px;
+}
+
+.adress li p , .contact li a , .social li a{
+    color:#675f5f;
+    letter-spacing: 2px;
+    text-decoration:none;
+    font-size:13px;
+}
+
+.adress, .contact , .social{
+    list-style: none;
+}
+
+.social li{
+    float:left;
+}
+
+.fa{
+    color:#9c9c9c;
+    margin-right: 10px;
+    font-size:14px;
+}
+
+.btn-search{
+    background: #484848;
+    border: none;
+    color: #ddd;
+    padding: 5px 15px;
+}
+
+.input-search{
+   border: none;
+   height: 30px;
+   padding-left: 10px;
+}
+
+/* jQuery fadeIn */
+.effect i {
+  height: 120px;
+  font-size: 100px;
+  transition: .8s;
+  transition-delay: .5s;
+
+}
+.effect div {
+  margin: auto;
+  transition: .8s;
+}
+
+.lunch img{
+  height: 150px;
+  width: 150px;
+}
+
+.news .card{
+  background-color: #eee;
+  border: 1px solid white;
+}
+
+article {
+	width: 80%;
+	margin: 0 auto;
+	padding: 0 10px;
+	box-sizing: border-box;
+}
+
+#wrapper {
+	height: 100%;
+  background-image: url('./img/brookelarkd.jpg');
+  background-size: cover;
+}
+#wrapper2 {
+	height: 100%;
+  background-image: url('./img/backfruits.jpg');
+  background-size: cover;
+}
+#wrapper,
+#wrapper2 {
+	overflow: auto;
+	perspective: 200px;
+}
+
+.border_top{
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+}
+.news_topicks{
+  margin: 100px 0 50px 0;
+}
+.slider {
+  padding: 0;
+	width: 100%;
+	/* height: 300px; */
+}
+.slider li {
+  border: 1px solid #eee;
+	height: 300px;
+}
+.slider img {
+  width: 100%;
+}
+
+.slider_box{
+  width: 20%;
+  margin: 20px;
+}
+
+/* @media (max-width: 740px) {
+  .slider_box{
+    margin: 20px 0;
+  }
+} */
+
+/* .cell{
+  width: 20%;
+} */
+
+.cell img{
+  width: 100%;
+}
