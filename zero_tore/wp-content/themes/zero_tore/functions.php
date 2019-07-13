@@ -407,29 +407,3 @@ if( is_customize_preview() ) {
 		);
 	}
 }
-
-//本文中のURLをはてなブログカードタグに変更する
-function url_to_hatena_blog_card($the_content) {
-  if ( is_singular() ) {//投稿ページもしくは固定ページのとき
-    //1行にURLのみが期待されている行（URL）を全て$mに取得
-    $res = preg_match_all('/^(<p>)?(<a.+?>)?https?:\/\/[-_.!~*\'()a-zA-Z0-9;\/?:\@&=+\$,%#]+(<\/a>)?(<\/p>)?(<br ? \/>)?$/im', $the_content,$m);
-    //マッチしたURL一つ一つをループしてカードを作成
-    foreach ($m[0] as $match) {
-      $url = strip_tags($match);//URL
-      
-//      //サイトの内部リンクは処理しない場合（Simplicity対策）
-//      preg_match( '/https?:\/\/(.+?)\//i', admin_url(), $r );//自サイトのドメイン取得
-//      if ( strpos( $url, $r[1] ) ) {
-//        continue ;
-//      }
-      
-      //取得した情報からブログカードのHTMLタグを作成
-      $tag = '<iframe class="hatenablogcard" src="https://hatenablog-parts.com/embed?url='.$url.'" frameborder="0" scrolling="no"></iframe>';
-      //本文中のURLをブログカードタグで置換
-      $the_content = preg_replace('{'.preg_quote($match).'}', $tag , $the_content, 1);
-    }
-  }
-  return $the_content;//置換後のコンテンツを返す
-}
-add_filter('the_content','url_to_hatena_blog_card');//本文表示をフック
-
